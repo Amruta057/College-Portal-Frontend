@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - SITCOE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #003366;
+      color: white;
+      padding: 10px 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo img {
+      height: 60px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 8px;
+      transition: background 0.3s ease;
+    }
+    nav ul li a:hover {
+      background: #00509e;
+      border-radius: 4px;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #003366;
+      margin-bottom: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .section-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 15px 0 30px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .title-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="sitcoelogo.jpg" alt="SITCOE Logo" />
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" style="background:#00509e; border-radius:4px;">About</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="notices.html">Notices</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Title image below header -->
+  <img src="titlesharad.jpg" alt="Sharad Institute Title" class="title-image" />
+
+  <main>
+    <h1>About Sharad Institute of Technology</h1>
+
+    <section id="history">
+      <h2>College History</h2>
+      <p>
+        Established in 1983, Sharad Institute of Technology (SITCOE) has grown to become one of the premier engineering colleges in Maharashtra. Over the decades, SITCOE has been dedicated to providing quality education, fostering innovation, and shaping future engineers with a strong ethical foundation.
+      </p>
+    </section>
+
+    <section id="alumni">
+      <h2>Alumni</h2>
+      <img src="alumni.jpg" alt="SITCOE Alumni" class="section-image" />
+      <p>
+        Our alumni network is spread across the globe, excelling in diverse fields such as software development, research, academia, and entrepreneurship. SITCOE alumni continue to contribute significantly to industry and society, maintaining a strong bond with their alma mater.
+      </p>
+    </section>
+
+    <section id="campus">
+      <h2>College Campus</h2>
+      <img src="campusimage.jpg" alt="SITCOE Campus" class="section-image" />
+      <p>
+        The SITCOE campus is situated in a serene environment, equipped with modern facilities including spacious classrooms, advanced laboratories, a well-stocked library, sports complex, and comfortable hostels. The campus is designed to encourage learning, creativity, and collaboration among students.
+      </p>
+    </section>
+
+    <section id="departments">
+      <h2>About Departments</h2>
+      <p>
+        SITCOE offers undergraduate and postgraduate courses in various engineering disciplines:
+      </p>
+      <ul>
+        <li>Computer Science and Engineering</li>
+        <li>Electronics and Telecommunication Engineering</li>
+        <li>Mechanical Engineering</li>
+        <li>Civil Engineering</li>
+        <li>Information Technology</li>
+      </ul>
+      <p>
+        Each department is staffed by experienced faculty members and equipped with state-of-the-art laboratories to provide hands-on experience.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SITCOE. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

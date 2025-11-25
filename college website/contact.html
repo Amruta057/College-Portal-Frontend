@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SITCOE - Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f4f8fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #002b5c, #004080);
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav {
+      flex-grow: 1;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      transition: background 0.3s;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    nav ul li a:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    .title-banner {
+      width: 100%;
+      height: auto;
+      display: block;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border-radius: 15px;
+      margin: 20px 0;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px 50px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #003366;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 2.8em;
+      letter-spacing: 1px;
+    }
+
+    .contact-info {
+      margin-bottom: 40px;
+    }
+
+    .contact-info h2 {
+      color: #004080;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 8px;
+    }
+
+    .contact-info p {
+      font-size: 1.1em;
+      margin: 8px 0;
+      color: #444;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    label {
+      font-weight: 600;
+      color: #003366;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 12px 15px;
+      font-size: 1em;
+      border: 2px solid #004080;
+      border-radius: 8px;
+      outline: none;
+      resize: vertical;
+      transition: border-color 0.3s;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: #002b5c;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+
+    button {
+      background: #002b5c;
+      color: white;
+      font-size: 1.1em;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #004080;
+    }
+
+    footer {
+      background: #001a33;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      main {
+        padding: 25px 20px;
+        margin: 20px auto;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="sitcoelogo.jpg" alt="SITCOE Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="notices.html">Notices</a></li>
+        <li><a href="contact.html" style="background-color: rgba(255,255,255,0.2); border-radius: 4px;">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <img src="titlesharad.jpg" alt="Sharad Institute Banner" class="title-banner" />
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <section class="contact-info">
+      <h2>Sharad Institute of Technology College of Engineering</h2>
+      <p><strong>Address:</strong> 123, Engineering Lane, Kolhapur, Maharashtra, India - 416001</p>
+      <p><strong>Phone:</strong> +91 231 1234567</p>
+      <p><strong>Email:</strong> info@sitcoe.ac.in</p>
+      <p><strong>Office Hours:</strong> Monday to Friday, 9:00 AM – 6:00 PM</p>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form id="contact-form" action="#" method="POST" onsubmit="return validateForm()">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required />
+
+        <label for="subject">Subject *</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject of your message" required />
+
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Sharad Institute of Technology College of Engineering. All Rights Reserved.
+  </footer>
+
+  <script>
+    function validateForm() {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !subject || !message) {
+        alert('Please fill in all required fields.');
+        return false;
+      }
+
+      // Basic email validation regex
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        return false;
+      }
+
+      alert('Thank you for contacting us! We will get back to you shortly.');
+      // Here you would normally submit form data via AJAX or server-side.
+      return false; // prevent actual form submission for demo
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SITCOE - Notices</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f4f8fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #002b5c, #004080);
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav {
+      flex-grow: 1;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      transition: background 0.3s;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    nav ul li a:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    .title-banner {
+      width: 100%;
+      height: auto;
+      display: block;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border-radius: 15px;
+      margin: 20px 0;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px 50px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #003366;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 2.8em;
+      letter-spacing: 1px;
+    }
+
+    #search-box {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto 30px auto;
+      display: block;
+      padding: 12px 15px;
+      font-size: 1.1em;
+      border: 2px solid #004080;
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    #search-box:focus {
+      border-color: #002b5c;
+    }
+
+    .notice-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .notice-item {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+      transition: background 0.2s;
+      cursor: default;
+    }
+
+    .notice-item:hover {
+      background: #e3f2fd;
+    }
+
+    .notice-date {
+      color: #004080;
+      font-weight: 600;
+      font-size: 0.9em;
+      margin-bottom: 8px;
+    }
+
+    .notice-title {
+      font-weight: 700;
+      font-size: 1.2em;
+      margin-bottom: 6px;
+      color: #003366;
+    }
+
+    .notice-desc {
+      font-size: 1em;
+      color: #444;
+      margin-bottom: 8px;
+    }
+
+    .notice-link {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .notice-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #001a33;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      main {
+        padding: 25px 20px;
+        margin: 20px auto;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="sitcoelogo.jpg" alt="SITCOE Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="notices.html" style="background-color: rgba(255,255,255,0.2); border-radius: 4px;">Notices</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <img src="titlesharad.jpg" alt="Sharad Institute Banner" class="title-banner" />
+
+  <main>
+    <h1>Latest Notices & Announcements</h1>
+
+    <input type="text" id="search-box" placeholder="Search notices..." aria-label="Search Notices" />
+
+    <ul class="notice-list" id="notice-list">
+      <li class="notice-item">
+        <div class="notice-date">June 1, 2025</div>
+        <div class="notice-title">Final Year Exam Timetable Released</div>
+        <div class="notice-desc">Students of all departments can now download the final year exam timetable from the notices section.</div>
+        <a href="notices/final_year_timetable.pdf" class="notice-link" target="_blank" rel="noopener">Download PDF</a>
+      </li>
+      <li class="notice-item">
+        <div class="notice-date">May 25, 2025</div>
+        <div class="notice-title">AI & Robotics Workshop Scheduled</div>
+        <div class="notice-desc">A week-long workshop on Artificial Intelligence and Robotics will be held from June 15 to June 22. Registration is open.</div>
+        <a href="notices/ai_robotics_workshop.pdf" class="notice-link" target="_blank" rel="noopener">More Info</a>
+      </li>
+      <li class="notice-item">
+        <div class="notice-date">May 10, 2025</div>
+        <div class="notice-title">Admission for Academic Year 2025-26 Open</div>
+        <div class="notice-desc">Applications are now open for undergraduate and postgraduate courses. Visit the Admissions page to apply.</div>
+        <a href="admissions.html" class="notice-link">Apply Now</a>
+      </li>
+      <li class="notice-item">
+        <div class="notice-date">April 30, 2025</div>
+        <div class="notice-title">Library Timings Extended During Exam Season</div>
+        <div class="notice-desc">To assist students during exams, the library will remain open till 10 PM from May 1 to May 31.</div>
+      </li>
+      <li class="notice-item">
+        <div class="notice-date">April 15, 2025</div>
+        <div class="notice-title">Maintenance Work Scheduled in Hostels</div>
+        <div class="notice-desc">Electrical and plumbing maintenance will take place in all hostels from April 20 to April 25. Students are advised to cooperate.</div>
+      </li>
+      <!-- Add more notices as needed -->
+    </ul>
+  </main>
+
+  <footer>
+    &copy; 2025 Sharad Institute of Technology College of Engineering. All Rights Reserved.
+  </footer>
+
+  <script>
+    const searchBox = document.getElementById('search-box');
+    const notices = document.querySelectorAll('.notice-item');
+
+    searchBox.addEventListener('input', () => {
+      const query = searchBox.value.toLowerCase();
+      notices.forEach(notice => {
+        const title = notice.querySelector('.notice-title').textContent.toLowerCase();
+        const desc = notice.querySelector('.notice-desc').textContent.toLowerCase();
+        if (title.includes(query) || desc.includes(query)) {
+          notice.style.display = '';
+        } else {
+          notice.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

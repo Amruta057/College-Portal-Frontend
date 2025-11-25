@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SITCOE - Departments</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f4f8fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #002b5c, #004080);
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav {
+      flex-grow: 1;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      transition: background 0.3s;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    nav ul li a:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    .title-banner {
+      width: 100%;
+      height: auto;
+      display: block;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border-radius: 15px; /* Rounded corners */
+      margin: 20px 0;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      color: #003366;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #004080;
+      padding-bottom: 12px;
+      font-size: 2em;
+      font-weight: 700;
+    }
+
+    .department {
+      margin-bottom: 40px;
+    }
+
+    .department h3 {
+      color: #004080;
+      margin-top: 0;
+      font-size: 1.5em;
+      font-weight: 700;
+    }
+
+    .department p {
+      margin: 10px 0 0 0;
+      font-size: 1.1em;
+      text-align: justify;
+      color: #333;
+    }
+
+    footer {
+      background: #001a33;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .section {
+        padding: 20px;
+      }
+
+      .section h2 {
+        font-size: 1.6em;
+      }
+
+      .department h3 {
+        font-size: 1.3em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="sitcoelogo.jpg" alt="SITCOE Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="notices.html">Notices</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <img src="titlesharad.jpg" alt="Sharad Institute Banner" class="title-banner" />
+
+  <section class="section">
+    <h2>Our Departments</h2>
+
+    <div class="department">
+      <h3>Artificial Intelligence and Data Science</h3>
+      <p>
+        The Artificial Intelligence and Data Science department at SITCOE offers an advanced curriculum focusing on 
+        the latest developments in AI, machine learning, deep learning, natural language processing, and big data analytics. 
+        Students gain hands-on experience with tools such as Python, TensorFlow, PyTorch, and Hadoop. Research opportunities include 
+        autonomous systems, computer vision, and predictive analytics, preparing students for careers in emerging tech industries, 
+        research labs, and startups.
+      </p>
+      <p>
+        The department regularly collaborates with industry leaders for workshops and internships, ensuring exposure to real-world 
+        AI challenges and data-driven decision-making. Graduates are well-equipped to contribute in domains like healthcare AI, 
+        financial modeling, smart cities, and IoT analytics.
+      </p>
+    </div>
+
+    <div class="department">
+      <h3>Computer Science and Engineering</h3>
+      <p>
+        SITCOE's Computer Science and Engineering department provides a comprehensive foundation in software engineering, 
+        algorithms, system design, databases, computer networks, and cybersecurity. The curriculum emphasizes coding proficiency 
+        along with critical thinking and problem-solving skills.
+      </p>
+      <p>
+        State-of-the-art computer labs, cloud computing resources, and project-based learning enable students to work on 
+        innovative software projects, open-source contributions, and real-time applications. Special focus is given to 
+        emerging fields such as blockchain, cloud-native applications, and software architecture.
+      </p>
+      <p>
+        The department also offers dedicated career support with frequent hackathons, coding contests, and campus placements 
+        in top IT companies.
+      </p>
+    </div>
+
+    <div class="department">
+      <h3>Electronics and Communication Engineering</h3>
+      <p>
+        This department combines the principles of electronics, communication theory, and embedded systems to prepare students 
+        for the evolving telecom and electronics industry. The syllabus covers analog/digital circuits, microprocessors, 
+        signal processing, wireless communication, and VLSI design.
+      </p>
+      <p>
+        Laboratories equipped with modern equipment allow students to develop prototypes in IoT, embedded control systems, and 
+        communication networks. Research areas include 5G/6G wireless technology, antenna design, sensor networks, and satellite communications.
+      </p>
+      <p>
+        Students are encouraged to participate in national electronics competitions and internships at reputed telecom firms.
+      </p>
+    </div>
+
+    <div class="department">
+      <h3>Robotics and Automation</h3>
+      <p>
+        SITCOE's Robotics and Automation department offers an interdisciplinary approach integrating mechanics, electronics, 
+        and computer science to build intelligent robotic systems. The curriculum includes robot kinematics, sensors, actuators, 
+        control theory, and AI for robotics.
+      </p>
+      <p>
+        Practical workshops enable students to design autonomous robots, drones, and industrial automation systems. The department 
+        also explores emerging trends like human-robot interaction, swarm robotics, and machine vision.
+      </p>
+      <p>
+        Collaborations with research institutions and industry partners provide hands-on project opportunities in automation and 
+        smart manufacturing.
+      </p>
+    </div>
+
+    <div class="department">
+      <h3>Mechatronics Engineering</h3>
+      <p>
+        Mechatronics at SITCOE is the fusion of mechanical, electronics, and computer engineering principles to develop smart 
+        products and systems. The program includes mechanics, control systems, robotics, embedded systems, and sensor technology.
+      </p>
+      <p>
+        Students learn to create intelligent machines such as automated guided vehicles, robotic arms, and smart manufacturing equipment. 
+        The department promotes practical learning through simulation software and hardware labs.
+      </p>
+      <p>
+        Graduates find opportunities in automotive, aerospace, robotics, and automation industries with skills to design and maintain 
+        complex mechatronic systems.
+      </p>
+    </div>
+
+    <div class="department">
+      <h3>Electrical Engineering</h3>
+      <p>
+        The Electrical Engineering department focuses on electrical power generation, transmission, distribution, and control systems. 
+        Topics include electrical machines, power electronics, renewable energy technologies, and smart grid systems.
+      </p>
+      <p>
+        The department emphasizes practical exposure through lab work in electrical machines, power systems simulation, and instrumentation. 
+        Students gain knowledge of modern energy-efficient technologies, grid automation, and electric vehicle systems.
+      </p>
+      <p>
+        The curriculum also integrates recent developments in solar, wind, and other sustainable energy solutions to prepare graduates for 
+        the evolving energy sector.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Sharad Institute of Technology College of Engineering. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

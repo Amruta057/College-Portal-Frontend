@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SITCOE - Admissions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f4f8fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #002b5c, #004080);
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav {
+      flex-grow: 1;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      transition: background 0.3s;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    nav ul li a:hover {
+      background-color: rgba(255,255,255,0.2);
+    }
+
+    .title-banner {
+      width: 100%;
+      height: auto;
+      display: block;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border-radius: 15px;
+      margin: 20px 0;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px 50px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #003366;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 2.8em;
+      letter-spacing: 1px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      color: #004080;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #004080;
+      padding-bottom: 10px;
+    }
+
+    section p, section ul {
+      font-size: 1.1em;
+      color: #333;
+      text-align: justify;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    section ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    .important-dates table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 1.1em;
+    }
+
+    .important-dates th, .important-dates td {
+      border: 1px solid #ccc;
+      padding: 12px 15px;
+      text-align: left;
+      background: #e3f2fd;
+    }
+
+    .important-dates th {
+      background: #004080;
+      color: white;
+    }
+
+    footer {
+      background: #001a33;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      main {
+        padding: 25px 20px;
+        margin: 20px auto;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      section h2 {
+        font-size: 1.4em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="sitcoelogo.jpg" alt="SITCOE Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="notices.html">Notices</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <img src="titlesharad.jpg" alt="Sharad Institute Banner" class="title-banner" />
+
+  <main>
+    <h1>Admissions at Sharad Institute of Technology College of Engineering</h1>
+
+    <section>
+      <h2>Eligibility Criteria</h2>
+      <p>
+        To enroll in SITCOE, prospective students must meet the following eligibility requirements:
+      </p>
+      <ul>
+        <li>Completion of 10+2 or equivalent examination with Physics, Chemistry, and Mathematics.</li>
+        <li>A minimum aggregate score of 50% (45% for reserved categories) in the qualifying examination.</li>
+        <li>Valid score in the Maharashtra Common Entrance Test (MHT-CET) or JEE Main examination.</li>
+        <li>For postgraduate courses, candidates must hold a relevant undergraduate degree with a minimum percentage as prescribed.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Application Process</h2>
+      <p>
+        The admission process at SITCOE is designed to be straightforward and transparent:
+      </p>
+      <ul>
+        <li><strong>Online Application:</strong> Candidates must fill out the online application form available on the official SITCOE website.</li>
+        <li><strong>Document Submission:</strong> Upload necessary documents including mark sheets, identity proof, caste certificates (if applicable), and photographs.</li>
+        <li><strong>Entrance Exam Scores:</strong> Submit valid MHT-CET or JEE Main scores during application.</li>
+        <li><strong>Merit List & Counseling:</strong> Based on entrance exam ranks, merit lists will be published followed by a counseling session for seat allocation.</li>
+        <li><strong>Fee Payment:</strong> Selected candidates must pay the admission fee online or at the campus to confirm their seat.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Fee Structure</h2>
+      <p>
+        SITCOE offers competitive fee structures for various programs:
+      </p>
+      <ul>
+        <li><strong>Undergraduate Programs:</strong> ₹1,20,000 per annum (includes tuition, labs, and library fees)</li>
+        <li><strong>Postgraduate Programs:</strong> ₹1,50,000 per annum</li>
+        <li>Additional fees may apply for hostel accommodation, transport, and extracurricular activities.</li>
+        <li>Fee concessions and installment options are available for eligible candidates.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Scholarships & Financial Aid</h2>
+      <p>
+        SITCOE is committed to supporting meritorious and deserving students through various scholarships:
+      </p>
+      <ul>
+        <li><strong>Merit-Based Scholarships:</strong> Awarded to top-performing students based on entrance exam ranks and academic records.</li>
+        <li><strong>Category-Based Scholarships:</strong> Available for SC, ST, OBC, and other reserved categories as per government policies.</li>
+        <li><strong>Need-Based Financial Aid:</strong> Provided to students from economically weaker sections after evaluation.</li>
+        <li>Students are encouraged to apply early and submit required documents to avail scholarships.</li>
+      </ul>
+    </section>
+
+    <section class="important-dates">
+      <h2>Important Dates</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Event</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Online Application Opens</td>
+            <td>January 15, 2025</td>
+          </tr>
+          <tr>
+            <td>Application Deadline</td>
+            <td>March 31, 2025</td>
+          </tr>
+          <tr>
+            <td>Entrance Exam (MHT-CET)</td>
+            <td>April 20-25, 2025</td>
+          </tr>
+          <tr>
+            <td>Merit List Announcement</td>
+            <td>May 10, 2025</td>
+          </tr>
+          <tr>
+            <td>Counseling and Seat Allotment</td>
+            <td>May 20 - June 5, 2025</td>
+          </tr>
+          <tr>
+            <td>Admission Confirmation & Fee Payment</td>
+            <td>June 10, 2025</td>
+          </tr>
+          <tr>
+            <td>Commencement of Classes</td>
+            <td>July 1, 2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Sharad Institute of Technology College of Engineering. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
